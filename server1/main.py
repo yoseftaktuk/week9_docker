@@ -60,5 +60,6 @@ def add_new_item(item: Item):
 
 
 if __name__ == "__main__":
-    import uvicorn
+    if not load_database():
+        save_database([])
     uvicorn.run(app, host="0.0.0.0", port=8000)
