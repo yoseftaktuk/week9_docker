@@ -41,5 +41,5 @@ docker build -t shopping-server2:v1 .
 ### Run the container
 
 ```bash
-docker run -it --name shopping-server2 -v fastapi-db:/data alpine sh
+docker run -it --name shopping-server2 -p 8000:8000 -v fastapi-db:/data alpine sh
 ```
