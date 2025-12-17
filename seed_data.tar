@@ -1,0 +1,12 @@
+[
+  {
+    "id": 2,
+    "name": "string",
+    "quantity": 0
+  },
+  {
+    "id": 3,
+    "name": "string",
+    "quantity": 1
+  }
+]
