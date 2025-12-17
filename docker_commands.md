@@ -27,7 +27,7 @@ build -t shopping-server1:v1 .
 ### Run the container
 
 ```bash
-docker run -i -t shopping-server2:v1 /bin/bash
+docker run -p 8000:8000 -t shopping-server2:v1 /bin/bash
 ```
 
 ## Server 2
