@@ -98,7 +98,8 @@ def save_to_bind_mount():
     except:
         return{'The sending was unsuccessful.'}
 
-
+if not load_database():
+        save_database([])
 
 if __name__ == "__main__":
     if not load_database_path(file_path_local):

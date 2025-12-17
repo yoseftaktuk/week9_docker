@@ -57,7 +57,9 @@ def add_new_item(item: Item):
             'name': item.name,
             'quantity': item.quantity}
     save_database(data=data)
-
+    
+if not load_database():
+        save_database([])
 
 if __name__ == "__main__":
     if not load_database():
