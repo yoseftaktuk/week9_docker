@@ -27,7 +27,7 @@ build -t shopping-server1:v1 .
 ### Run the container
 
 ```bash
-docker run -p 8000:8000 -t shopping-server2:v1 /bin/bash
+docker run -it --name shopping-server1 -p 8000:8000 -v fastapi-db:/app/db alpine sh
 ```
 
 ## Server 2
